@@ -1,0 +1,28 @@
+{
+  "table_name": "job_market_data",
+  "required_columns": [
+    "Job_ID", "Job_Title", "Company", "Company_Type", "Industry", 
+    "City", "Location_Tier", "Experience_Level", "Job_Type", "Work_Mode", 
+    "Salary_LPA", "Skills_Required", "Education_Required", "Openings", 
+    "Applicants", "Company_Rating", "Date_Posted"
+  ],
+  "rules": {
+    "Job_ID": {"type": "TEXT", "required": true, "unique": true},
+    "Job_Title": {"type": "TEXT", "required": true},
+    "Company": {"type": "TEXT", "required": true},
+    "Company_Type": {"type": "TEXT", "required": false},
+    "Industry": {"type": "TEXT", "required": false},
+    "City": {"type": "TEXT", "required": true},
+    "Location_Tier": {"type": "TEXT", "required": false},
+    "Experience_Level": {"type": "TEXT", "required": false},
+    "Job_Type": {"type": "TEXT", "required": false},
+    "Work_Mode": {"type": "TEXT", "required": false},
+    "Salary_LPA": {"type": "REAL", "required": true},
+    "Skills_Required": {"type": "TEXT", "required": true},
+    "Education_Required": {"type": "TEXT", "required": false},
+    "Openings": {"type": "INTEGER", "required": false},
+    "Applicants": {"type": "INTEGER", "required": false},
+    "Company_Rating": {"type": "REAL", "required": false},
+    "Date_Posted": {"type": "TEXT", "required": false}
+  }
+}

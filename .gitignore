@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# Database & Data
+*.db
+pipeline.db
+incoming_files/
+processed_files/
+failed_files/
+quarantine_files/
+*.csv
+
+# IDE
+.vscode/
+.idea/
